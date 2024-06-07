@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+#form{
+	font-family: "Roboto";
+/* width: 100vh; */
+}
+.input100{
+letter-spacing: 3px;
+}
+</style>
+<head>
+	<title>Edit/View <div class="popup" id="popup">
+		<div class="popup-content">
+			<!-- <span class="close" onclick="closePopup()">&times;</span> -->
+			<h2>GREETINGS BELOVETH</h2>
+			<button class="popbu" onclick="closePopup()">ok</button>
+		</div>
+	</div>Member</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main3.css">
+	<link rel="stylesheet" type="text/css" href="css2/index.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('images/bg3.png');">
+			<div  style="border-radius: 2%;border: 7px solid rgb(227, 241, 227);" class="wrap-login100">
+				<span style="color: rgb(209, 77, 77); font-weight: 800;" class="login100-form-title p-b-34">
+					Edit Member 
+				</span>
+				<form class="login100-form validate-form"  id="fetchForm">
+
+					<div class="wrap-input100 validate-input" data-validate="Enter keyNumber">
+						<input class="input100 text-center" id="keyNumber" name="keyNumber" type="text" placeholder="Enter Key number" required>
+						<span class="focus-input100" data-placeholder="&#xf162;"></span>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<button type="submit" id="submit" class="login100-form-btn">
+							SEARCH
+						</button>
+					</div>
+
+				</form>
+				<form style="letter-spacing: 7px;" class="login100-form validate-form" id="editForm">
+					
+
+					
+					<div class="wrap-input100  mt-4">
+						<label style="color: rgb(131, 242, 20);" for="editDegree">KEY NUMBER</label>
+						<input class="input100" type="text"  id="editKeyNumber" name="keyNumber">
+						<!-- <span class="focus-input100" data-placeholder="&#xf162;"></span> -->
+					</div>
+					<div class="wrap-input100  mt-4">
+						<label style="color: rgb(131, 242, 20);" for="editName">NAME</label>
+						<input class="input100" type="text" id="editName" name="name">
+						<!-- <span class="focus-input100" data-placeholder="&#xf207;"></span> -->
+					</div>
+					<div class="wrap-input100  mt-4">
+						<label style="color: rgb(131, 242, 20);" for="editDegree">DEGREE</label>
+						<input class="input100" type="text"  id="editDegree" name="degree">
+						<!-- <span class="focus-input100" data-placeholder="&#xf19d;">></span> -->
+					</div>
+					<div class="wrap-input100 mt-4">
+						<label style="color: rgb(131, 242, 20);" for="editDegree">STATUS</label>
+						<input class="input100" type="text" id="editStatus" name="status">
+						<!-- <span class="focus-input100" data-placeholder="&#xf00c;"></span> -->
+					</div>
+					<div class="wrap-input100  mt-4">
+						<label style="color: rgb(131, 242, 20);" for="editDegree">PHONE</label>
+						<input class="input100" type="tel" id="editPhone" name="phone">
+						<!-- <span class="focus-input100" data-placeholder="&#xf1ad;"></span> -->
+
+			</div>
+					<div class="wrap-input100  mt-4">
+						<label style="color: rgb(131, 242, 20);" for="editDegree">ADDRESS</label>
+						<textarea class="input100" type="text" id="editAddress" name="address"></textarea>
+						<!-- <span class="focus-input100" data-placeholder="&#xf1ad;"></span> -->
+					</div>
+					<div class="wrap-input100  mt-4">
+						<label style="color: rgb(131, 242, 20);" for="editDegree">OFFICE</label>
+						<input class="input100" type="text" id="editOffice" name="office">
+						<!-- <span class="focus-input100" data-placeholder="&#xf19c;"></span> -->
+					</div>
+					<div class="wrap-input100 mt-4">
+						<label style="color: rgb(131, 242, 20);" for="editDegree">TAC</label>
+						<input class="input100" type="text" id="editTAC" name="tac">
+						<!-- <span class="focus-input100" data-placeholder="&#xf110"></span> -->
+					</div>
+					<div class="wrap-input100 mt-4">
+						<label style="color: rgb(131, 242, 20);" for="editDegree">HM</label>
+						<input class="input100" type="text" id="editHM" name="hm">
+						<!-- <span class="focus-input100" data-placeholder="&#xf110"></span> -->
+					</div>			 
+					<div class="container col-12 boil text-center">
+						<div class="row">
+							<div class="col">
+								<button class="bstb">
+									<a href="./index2.html">ADD</a>
+							</button>
+							</div>
+							<div class="col">
+								<button class="bstb">
+									<a href="./index1.html">HOME</a>
+								</button>
+							</div>
+							<div class="col">
+								<button class="bstb">
+									<a href="./count2.html">VIEW</a>
+							</button>
+							</div>
+						</div>
+					</div>
+<!-- 					
+					<div class="text-center p-t-90">
+						<a style="font-weight: 900;" class="txt1" href="#">
+							PEACE PROFOUND
+						</a>
+					</div> -->
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	<script src="js2/index3.js"></script>
+
+</body>
+</html>

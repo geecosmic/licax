@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+#form{
+	font-size: "Roboto";
+/* width: 100vh; */
+}
+
+</style>
+<head>
+	<title>Add Member</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main3.css">
+	<link rel="stylesheet" type="text/css" href="css2/index.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		
+		<div class="container-login100" style="background-image: url('images/bg3.png');">
+			<div  style="border-radius: 2%;border: 7px solid rgb(227, 241, 227);" class="wrap-login100">
+				<span style="color: rgb(209, 77, 77); font-weight: 800;" class="login100-form-title p-b-34">
+					Add Member 
+				</span>
+				<form class="login100-form validate-form" id="form">
+					
+
+					
+					<div class="wrap-input100 validate-input mt-4" data-validate="Enter password">
+						<input class="input100" type="text" pattern="[0-9pP]*" name="KEY NO." id="keyNumber" placeholder="Key Number" required>
+						<span class="focus-input100" data-placeholder="&#xf162;"></span>
+					</div>
+					<div class="wrap-input100 validate-input mt-4" data-validate="Enter Name">
+						<input class="input100" type="text" id="name" name="NAME" placeholder="Name" required>
+						<span class="focus-input100" data-placeholder="&#xf207;"></span>
+					</div>
+					<div class="wrap-input100 validate-input mt-4" data-validate="Enter Degree">
+						<input class="input100" type="text" id="DEGREE" name="DEGREE" placeholder="Degree" required>
+						<span class="focus-input100" data-placeholder="&#xf19d;">></span>
+					</div>
+					<div class="wrap-input100 validate-input mt-4" data-validate="Enter Status">
+						<input class="input100" type="text" id="STATUS" name="STATUS" placeholder="Status" required>
+						<span class="focus-input100" data-placeholder="&#xf00c;"></span>
+					</div>
+					<div class="wrap-input100 validate-input mt-4" data-validate="Enter password">
+						<input class="input100" type="tel" id="PHONE" name="PHONE" placeholder="Phone" required>
+						<span class="focus-input100" data-placeholder="&#xf1ad;"></span>
+
+			</div>
+					<div class="wrap-input100 validate-input mt-4" data-validate="Enter password">
+						<input class="input100" type="text" id="ADDRESS" name="ADDRESS" placeholder="Address" required>
+						<span class="focus-input100" data-placeholder="&#xf1ad;"></span>
+					</div>
+					<div class="wrap-input100 validate-input mt-4" data-validate="Enter password">
+						<input class="input100" type="text" id="OFFICE" name="OFFICE" placeholder="Office" required>
+						<span class="focus-input100" data-placeholder="&#xf19c;"></span>
+					</div>
+					<div class="wrap-input100 validate-input mt-4" data-validate="Enter password">
+						<input class="input100" type="text" id="TAC" name="TAC" placeholder="TAC" required>
+						<span class="focus-input100" data-placeholder="&#xf110"></span>
+					</div>
+					<div class="wrap-input100 validate-input mt-4" data-validate="Enter password">
+						<input class="input100" type="text" id="HM" name="HM" placeholder="HM" required>
+						<span class="focus-input100" data-placeholder="&#xf110"></span>
+					</div>
+
+					 
+					<div class="container-login100-form-btn">
+						<button type="submit" id="submit" class="login100-form-btn">
+							SUBMIT
+						</button>
+					</div>
+					<div class="container col-12 boil text-center">
+						<div class="row">
+							<div class="col">
+								<button class="bstb">
+									<a href="./index3.html">EDIT</a>
+							</button>
+							</div>
+							<div class="col">
+								<button class="bstb">
+									<a href="./index1.html">HOME</a>
+								</button>
+							</div>
+							<div class="col">
+								<button class="bstb">
+									<a href="./count2.html">VIEW</a>
+							</button>
+							</div>
+						</div>
+					</div>
+<!-- 					
+					<div class="text-center p-t-90">
+						<a style="font-weight: 900;" class="txt1" href="#">
+							PEACE PROFOUND
+						</a>
+					</div> -->
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	<script src="js2/index2.js"></script>
+
+</body>
+</html>
