@@ -1,4 +1,10 @@
 
+@font-face {
+  font-family: Poppins-Regular;
+  /* src: url('../fonts/poppins/Poppins-Regular.ttf');  */
+  src: url('../fonts/Roboto/Roboto-BlackItalic.ttf'); 
+}
+
 
 
 
@@ -13,7 +19,7 @@
 
 body, html {
 	height: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto-BlackItalic", sans-serif;
 }
 
 /*---------------------------------------------*/
