@@ -46,6 +46,6 @@ document.getElementById('deleteForm').addEventListener('submit', function(e) {
         })
         .catch(error => alert('Error: ' + error.message));
     } else {
-        alert('Incorrect password. Deletion not performed.');
+        alert('wrong password');
     }
 });
