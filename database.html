@@ -34,7 +34,7 @@
       margin-bottom: 20px;
     }
     button{
-      width: 180px;
+      width: 120px;
     }
     .inp{
   height: 50px;
@@ -78,13 +78,15 @@
     </div>
   </nav>
   <div class="container mt-5">
-      <div class="search-container text-center">
+      <div class="search-container text-center mt-3">
+              <h3 style="background-color: rgb(81, 81, 6); font-weight: 800;" class="text-center mb-3 pt-3 pb-2">LICA DATABASE</h3>
+
         <button class="btn btn-secondary mb-2" onclick="displayData(data); refinp()">Refresh</button>
         <div class="container col-12 tinp">
           <div class="row">
             <div class="col-1"></div>
             <div class="col-10">
-              <input type="text" id="search-input" class="form-control inp text-center" placeholder="Search kenumber or name"  />
+              <input type="text" id="search-input" class="form-control inp text-center" placeholder="Search kenumber/name"  />
             </div>
             <div class="col-1"></div>
           </div>
@@ -92,7 +94,6 @@
         <button class="btn btn-primary mt-2" onclick="searchData()">Search</button>
       
       </div>
-      <h3 style="background-color: rgb(81, 81, 6); font-weight: 800;" class="text-center mb-3 pt-3 pb-2">LICA DATABASE</h3>
       <table class="card-b table table-borderless" id="data-table">
         <!-- Table data will be inserted here -->
       </table>
