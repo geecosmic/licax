@@ -75,6 +75,15 @@
       border-radius: 17px;
     }
   </style>
+  
+  <script>
+    // Check if the flag is set in localStorage
+    if (!localStorage.getItem('visitedIndex')) {
+        // If the flag is not set, redirect to index.html
+        window.location.href = 'index.html';
+    }
+  </script>
+  
 </head>
 <body oncontextmenu="return false">
   <nav style="background-color: darkgreen;" class="navbar navbar-expand-lg navbar-light">
