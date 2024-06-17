@@ -31,26 +31,31 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
-<script>
+
+<!-- <script>
 	// Set the flag in localStorage
 	localStorage.setItem('visitedIndex', 'true');
-</script>
+</script> -->
 
 
 <style>
 	body{
 		height: 100vh;
 	}
+
+	
+
 </style>
 <body oncontextmenu="return false">
 	
 	<div class="limiter">
 		
-		<div class="container-login100" style="background-image: url('images/ros.jpg');">
+		<div class="container-login100" style="background-image: url('images/bg.jpg');">
 			<div  style="border-radius: 2%;border: 13px solid rgb(20, 23, 20);" class="wrap-login100">
 				<form class="login100-form validate-form"  id="loginForm">
 					<div class="text-center">
-					<i ondblclick="window.location.href = 'password_set.html';" class="fas fa-info-circle text-center"></i>
+					<!-- <i ondblclick="window.location.href = 'password_set.html';" class="fas fa-info-circle text-center"></i> -->
+					<!-- <i ondblclick="showp();" class="fas fa-info-circle text-center"></i> -->
 				</div>
 					<div class="text-center mb-2">
 						<h2><a style="color: chartreuse;font-weight: 800;font-size: 26px;padding-bottom: 30px;">
@@ -61,7 +66,7 @@
 					
 					<span class="login100-form-logo">
 						<!-- <i class="zmdi zmdi-landscape"></i> -->
-						<p><img src="media/img12.png" width="100px" height="120px"></p> 
+						<p ondblclick="showp();" ><img src="media/img12.png" width="100px" height="120px"></p> 
 
 					</span>
 
@@ -70,21 +75,22 @@
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate="Enter password">
-						<input class="input100" id="passwordInput" type="password" name="password" placeholder="Password">
+						<input class="input100" id="password" type="password" name="password" placeholder="Password">
 						<span class="focus-input100" data-placeholder="&#xf191;"></span>
 					</div>
 					
 					<div class="container-login100-form-btn">
-						<button onclick="checkPassword()" type="submit" class="login100-form-btn">
+						<button type="submit" class="login100-form-btn">
 							Login
 						</button>
 					</div>
+					<p class="container pt-3 text-center" style="color: whitesmoke; display:none;" id="showpass"></p>
 				</form>
 			</div>
 		</div>
 	</div>
 
-	<script>
+	<!-- <script>
     function checkPassword() {
       var storedPassword = localStorage.getItem('password');
       var userInput = document.getElementById('passwordInput').value;
@@ -95,7 +101,7 @@
       }
     }  
     // document.getElementById("pword").innerHTML = localStorage.getItem('password');
-  </script>
+  </script> -->
 	
 
 	<div id="dropDownSelect1"></div>
