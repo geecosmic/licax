@@ -1,4 +1,4 @@
-git initgit  init 
+git init
 git add .
 git commit -m "sixth commit"
 git branch -M main  
