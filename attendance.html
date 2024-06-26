@@ -24,8 +24,8 @@
 
   
 </head>
-<body oncontextmenu="return false">
-<!-- <body"> -->
+<!-- <body oncontextmenu="return false"> -->
+<body">
   <nav style="background-color: darkgreen; " class="navbar navbar-expand-lg navbar-light">
     <a class="navbar-brand text-light" href="./index1.html"><i class="fa fa-home text-light" aria-hidden="true"></i>LICA</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,9 +68,9 @@
 
     <table class="card-b table table-borderless" id="data-table">
       <!-- <div class="spinner" id="spinner"></div> -->       
-    <div class="text-center text-light ">
+   
       <tr id="no-data-row"><td colspan="1" class="hidden">No data available until next Convocation / Event</td></tr>
-    </div>
+    
       <!-- Table data will be inserted here -->
 
     </table>
@@ -137,26 +137,27 @@
 
           const keynumberText = document.createElement('p');
           keynumberText.className = 'card-text';
-          keynumberText.textContent = `Keynumber: ${row[0]}`;
+          // keynumberText.textContent = `Keynumber: ${row[0]} -Name: ${row[1]}`;
+          keynumberText.textContent = `${row[0]} - ${row[1]}`;
 
-          const nameText = document.createElement('p');
-          nameText.className = 'card-text';
-          nameText.textContent = `Name: ${row[1]}`;
+          // const nameText = document.createElement('p');
+          // nameText.className = 'card-text';
+          // nameText.textContent = `Name: ${row[1]}`;
 
-          const dateText = document.createElement('p');
-          dateText.className = 'card-text';
-          dateText.textContent = `Date/Time: ${row[dateColumnIndex]}`;
+          // const dateText = document.createElement('p');
+          // dateText.className = 'card-text';
+          // dateText.textContent = `Date/Time: ${row[dateColumnIndex]}`;
 
           cardBodyDiv.appendChild(keynumberText);
-          cardBodyDiv.appendChild(nameText);
-          cardBodyDiv.appendChild(dateText);
+          // cardBodyDiv.appendChild(nameText);
+          // cardBodyDiv.appendChild(dateText);
           cardDiv.appendChild(cardBodyDiv);
           td.appendChild(cardDiv);
           tr.appendChild(td);
 
           table.appendChild(tr);
         });
-      }
+      }document.getElementById('spinner').hidden=true
     }
 
     function searchData() {

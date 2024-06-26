@@ -24,24 +24,29 @@
       position: relative;
 
     }
-    .search-container {
+    /* .search-container {
       margin-bottom: 20px;
-    }
-    .inp {
+    } */
+    /* .inp {
       height: 50px;
       font-size: 20px;
       font-weight: 700;
       text-align: center;
       padding: 20px;
       padding-left: 20px;
-    }
+    } */
+
+
+    /* change colour of navbar hamburger icon */
     .navbar-light .navbar-toggler-icon {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(240, 255, 0, 1)' stroke-width='5' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
       color: brown;
     }
-    button {
+    /* button {
       width: 100px;
     }
+     */
+
     @media screen and (min-width: 480px) {
       .navbar-expand-lg .navbar-collapse {
         display: flex!important;
